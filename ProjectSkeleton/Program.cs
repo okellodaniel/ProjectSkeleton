@@ -12,9 +12,9 @@ builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList")
 builder.Services.AddDbContext<TodoDb>(x => x.UseNpgsql(builder.Configuration.GetConnectionString("TodoDb")));
 
 
-builder.Services.AddApplication()
-                .AddInfrustructure()
-                .AddAPresentation();
+//builder.Services.AddApplication()
+//                .AddInfrustructure()
+//                .AddAPresentation();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
