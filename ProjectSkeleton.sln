@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectSkeleton", "ProjectS
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C326C832-9939-4992-B309-3BEFD56CC57F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{DF8CE535-CFEF-44EC-9385-C45D742BBAB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Domain\Domain.csproj", "{DF8CE535-CFEF-44EC-9385-C45D742BBAB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "..\Application\Application.csproj", "{DE676555-29F5-4FC7-B4AC-760BFB1B06AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "..\Application\Application.csproj", "{DE676555-29F5-4FC7-B4AC-760BFB1B06AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{945102D0-EE92-4857-A5AC-D8499C1CF299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{945102D0-EE92-4857-A5AC-D8499C1CF299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "..\Presentation\Presentation.csproj", "{E8123F2E-89FA-416B-9C67-AD402AAA3AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "..\Presentation\Presentation.csproj", "{E8123F2E-89FA-416B-9C67-AD402AAA3AD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{016C1519-AA71-4F1F-9C27-DA0826A5BDED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1F6A0CC-97C3-49A0-9CA1-8DA01D5B1AA3} = {016C1519-AA71-4F1F-9C27-DA0826A5BDED}
+		{DF8CE535-CFEF-44EC-9385-C45D742BBAB4} = {016C1519-AA71-4F1F-9C27-DA0826A5BDED}
+		{DE676555-29F5-4FC7-B4AC-760BFB1B06AF} = {016C1519-AA71-4F1F-9C27-DA0826A5BDED}
+		{945102D0-EE92-4857-A5AC-D8499C1CF299} = {016C1519-AA71-4F1F-9C27-DA0826A5BDED}
+		{E8123F2E-89FA-416B-9C67-AD402AAA3AD0} = {016C1519-AA71-4F1F-9C27-DA0826A5BDED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7757341-C195-43AB-A5A9-2570BB4CD8ED}
