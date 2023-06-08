@@ -11,7 +11,6 @@ builder.Host.UseSerilog((context, configuration) =>
 builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList"));
 builder.Services.AddDbContext<TodoDb>(x => x.UseNpgsql(builder.Configuration.GetConnectionString("TodoDb")));
 
-builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplication()
                 .AddInfrustructure()
@@ -19,11 +18,6 @@ builder.Services.AddApplication()
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
